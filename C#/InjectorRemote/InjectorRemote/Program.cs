@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace InjectorRemote
 {
-    internal class Program
+    public class Program
     {
         // Use PInvoke to import the APIs we want to use 
         [DllImport("kernel32.dll", SetLastError = true, ExactSpelling = true)]
@@ -19,7 +19,7 @@ namespace InjectorRemote
         [DllImport("kernel32.dll")]
         static extern IntPtr CreateRemoteThread(IntPtr hProcess, IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, IntPtr lpThreadId);
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             // Define your shellcode. The shellcode can be hardecoded in the program, it can be retrieved from the internet etc.
             // var shellcode = new byte[]{/* Shellcode here */};

@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 
 namespace InjectorLocal
 {
-    internal class Program
+    public class Program
     {
         // Use PInvoke to import the APIs we want to use 
         [DllImport("kernel32")]
@@ -18,7 +18,7 @@ namespace InjectorLocal
         [DllImport("kernel32.dll")]
         public static extern uint WaitForSingleObject(IntPtr hHandle, uint dwMilliseconds);
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             // Define your shellcode. The shellcode can be hardecoded in the program, it can be retrieved from the internet etc.
             // var shellcode = new byte[] {/* Shellcode here */};
