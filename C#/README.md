@@ -5,4 +5,4 @@ Folder containing files of the local injector.
 Folder containing files of the cross-process injector.
 
 # `LoadDemo`
-Folder containing files of basic `Hello, World!` application to demonstrate assembly loading.
+Folder containing files of the basic `Hello, World!` application to demonstrate assembly loading.

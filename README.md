@@ -1,5 +1,5 @@
 # BIT 2024 - Urge
-Repository containing files for the BIT subject.
+Repository containing files for the BIT semestral project.
 
 #### Sources
 - https://www.malwarebytes.com/malware
@@ -11,4 +11,6 @@ Repository containing files for the BIT subject.
 - https://www.crowdstrike.com/cybersecurity-101/living-off-the-land-attacks-lotl/
 - https://www.mcafee.com/blogs/other-blogs/mcafee-labs/rise-of-lnk-shortcut-files-malware/ 
 - https://gist.github.com/HarmJ0y/984951d583d90ecee0f607e0b2849d1c 
-- https://practicalsecurityanalytics.com/persistence-with-wmi-event-subscription-and-powershell-cradles/ 
+- https://practicalsecurityanalytics.com/persistence-with-wmi-event-subscription-and-powershell-cradles/
+- https://pentestlab.blog/2020/01/21/persistence-wmi-event-subscription/
+- https://www.offsec.com/metasploit-unleashed/web-delivery/
