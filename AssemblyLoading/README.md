@@ -1,6 +1,7 @@
 # PowerShell Assembly Loading
 
 ## Loading
+
 ### Disk
 ```powershell
 [System.Reflection.Assembly]::LoadFrom('<path_to_file>')
@@ -15,6 +16,8 @@
 ```powershell
 [System.Reflection.Assembly]::Load([Convert]::FromBase64String('<base64_string>'))
 ```
+
+***
 
 ## Execution
 ```powershell
