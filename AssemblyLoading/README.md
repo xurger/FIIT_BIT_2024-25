@@ -21,6 +21,6 @@
 
 ## Execution
 ```powershell
-# [<PublicNamespace>.<PublicClass>]::Function(<arguments>
+# [<PublicNamespace>.<PublicClass>]::Function(<arguments>)
 [Rubeus.Program]::Main("klist")
 ```
